@@ -1,0 +1,124 @@
+.container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+}
+.mainContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+}
+.links{
+  display: flex;
+  align-items: center;
+}
+.links a{
+  text-decoration: none;
+}
+.links a img{
+  margin: 0 10px;
+  padding: 5px;
+  width: 50px;
+}
+.shop{
+  position: relative;
+}
+.shop span{
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background-color: #b700ffda;
+  color: #fff;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: .8rem;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    height: 60px;
+  }
+  .mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 25px; */
+  }
+  .links a img{
+    margin: 0 6px;
+    padding: 3px;
+    width: 35px;
+  }
+  .shop span{
+    width: 18px;
+    line-height: 18px;
+    font-size: .6rem;
+  }
+  .shop img{
+    width: 30px;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 578px) {
+  .container{
+    height: 45px;
+  }
+  .mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+  }
+  .links a:first-child img{
+    width: 30px;
+  }
+  .links a img{
+    margin: 0 6px;
+    width: 30px;
+  }
+  .shop span{
+    width: 15px;
+    line-height: 15px;
+    font-size: .5rem;
+  }
+  .shop img{
+    width: 25px;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 470px) {
+  .container{
+    width: 100%;
+  }
+  .links a{
+    font-size: .8rem;
+    padding: 3px 0;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .links a{
+    text-align: center;
+    font-size: .6rem;
+  }
+}

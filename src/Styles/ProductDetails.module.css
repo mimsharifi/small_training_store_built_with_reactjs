@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 150px 50px;
+  padding: 20px;
+  border: 1px solid silver;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.image {
+  width: 450px;
+}
+.information {
+  text-align: left;
+  margin-left: 30px;
+  padding: 20px;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+.information h4 {
+  color: #cc00e7;
+  margin: 20px 0 30px;
+  font-weight: 600;
+}
+.description {
+  color: rgb(62, 62, 62);
+  margin-bottom: 30px;
+}
+.category {
+  color: rgb(62, 62, 62);
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.category span {
+  color: #e69602;
+  font-size: 1rem;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  display: inline-block;
+  background: #34a853;
+  padding: 7px 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+.buttonContainer a {
+  text-decoration: none;
+  display: inline-block;
+  background: #cc00e7;
+  padding: 7px 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+.buttonContainer a:hover {
+  background-color: #a904be;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    margin: 120px 80px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    width: 170px;
+    margin-bottom: 50px;
+  }
+  .textContainer {
+    margin: 0;
+  }
+  .information {
+    text-align: left;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 120px 20px 50px;
+    justify-content: center;
+  }
+  .textContainer {
+    margin: 0;
+  }
+  .information {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .buttonContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .price {
+    padding: 5px 10px;
+    font-weight: 500;
+  }
+  .buttonContainer a {
+    padding: 5px 10px;
+    font-weight: 500;
+  }
+}

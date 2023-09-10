@@ -1,0 +1,173 @@
+*{
+  font-family: sans-serif;
+}
+.container{
+  min-height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #c5c4c4;
+  border-radius: 10px;
+  width: 420px;
+  padding: 20px;
+  /* margin-top: 100px; */
+}
+.header{
+  color: #d400ff;
+  padding: 20px 0;
+}
+.fieldContainer{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  height: 60px;
+}
+.fieldContainer label{
+  color: #747474;
+  font-size: .9rem;
+  margin-bottom: 5px;
+}
+.formInput{
+  width: 100%;
+  line-height: 25px;
+  padding: 0 3px;
+  outline: none;
+  border: 1px solid #747474;
+  border-radius: 4px;
+}
+.fieldContainer span{
+  margin-top: 5px;
+  color: red;
+  font-size: 0.7rem;
+  border: 1px solid red;
+  text-align: left;
+  width: fit-content;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+.accept{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  height: 50px;
+}
+.accept label{
+  color: #747474;
+  font-size: .9rem;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.accept span{
+  margin-top: 5px;
+  color: red;
+  font-size: 0.7rem;
+  border: 1px solid red;
+  text-align: left;
+  width: fit-content;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.buttons a{
+  color: #d400ff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.buttons a:hover{
+  color: #b700db;
+}
+.buttons button{
+  background-color: #d400ff;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons button a{
+  text-decoration: none;
+  color: #fff;
+}
+.buttons button a:hover{
+  color: #fff;
+}
+.buttons a{
+  text-decoration: none;
+}
+.buttons div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button:hover{
+  background-color: #b700db;
+}
+.unCompleted{
+  width: 100%;
+  line-height: 25px;
+  padding: 0 3px;
+  outline: none;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+}
+.unCompleted:focus,
+.formInput:focus{
+  border: 1px solid #00c3ff;
+}
+
+@media screen and (max-width: 680px ) {
+  .formContainer{
+    width: 350px;
+  }
+  .header{
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .container{
+    margin: 80px 0 30px;
+  }
+}
+@media screen and (max-width: 441px ) {
+  .formContainer{
+    width: 100%;
+    margin: 0 5%;
+  }
+  .buttons button{
+    font-size: 1rem;
+    padding: 4px 7px;
+  }
+  .buttons a{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 330px ) {
+  .formContainer{
+    width: 100%;
+    margin: 0 5%;
+  }
+  .buttons button{
+    font-size: .7rem;
+    padding: 3px 3px;
+  }
+  .buttons a{
+    font-size: 0.6rem;
+  }
+}
